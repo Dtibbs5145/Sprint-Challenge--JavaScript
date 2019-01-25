@@ -152,8 +152,8 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const largerPopulation = [];
-zooAnimals.filter(function(population) {
-  
+zooAnimals.filter(function(pop) {
+  largerPopulation.push(pop.population < 5);
 })
 console.log(largerPopulation);
 
@@ -162,7 +162,10 @@ console.log(largerPopulation);
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
+const populationTotal =
+zooAnimals.reduce((population, zooAnimal) =>  {
+  return population += zooAnimal.population;
+}, 0);
 console.log(populationTotal);
 
 
