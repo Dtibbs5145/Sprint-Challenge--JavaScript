@@ -16,35 +16,47 @@
 
 // How much did tyrannosaurus weigh?
 const tyrannosaurus = {
-  weight : '7000kg',
-
+  diet: 'carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceious',
 }
-console.log();
+console.log(tyrannosaurus(weight));
 
 // What was the diet of a velociraptor?
 const velociraptor = {
-  diet :  carnivorous,
-
+  diet:  carnivorous,
+  weight: '15kg',
+  length: '1.8m',
+  period: 'Late Cretaceious',
 }
-console.log();
+console.log(velociraptor(diet));
 
 // How long was a stegosaurus?
 const stegosaurus = {
-  length : '9m',
-
+  diet: 'herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic',
 }
-console.log();
+console.log(stegosaurus(length));
 
 // What time period did tyrannosaurus live in?
 const tyrannosaurus = {
-  time : 'Late Cretaceious',
+  diet: 'carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceious',
 
 }
-console.log();
+console.log(tyrannosaurus(period));
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+tyrannosaurus {
+  roar: "RAWERSRARARWERSARARARRRR!",
+}
+console.log(tyrannosaurus(roar));
 
 
 // ==== Arrays ====
@@ -64,20 +76,30 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  */
 
-const universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College"]
-
+const universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
+"Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University",
+"Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"]
 
 /*Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
+const universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
+"Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University",
+"Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"];
+universities.sort();
 console.log(universities)
 
-/* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
+/* Request 2: Create a new array called contactInfo that contains both first name and email of each student. */
 
-The resulting contact information should have a space between the first name and the email information like this: 
+const contactInfo = [{"Cynde ctorry0@macromedia.com"}, {"Saundra swhal1@state.gov"}, {"Lambert lparham2@techcrunch.com"},
+{"Modestine mdolder3@symantec.com"}, {"Chick camorts4@google.com.au"}, {"Jakob jharken5@spiegel.de"}, {"Robbi rbrister6@redcross.org"},
+{"Colline cbrosh7@alibaba.com"}, {"Michail mrome8@shinystat.com"}, {"Hube hlethbrig9@foxnews.com"}]
+
+/*The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
+const contactInfo = [{"Cynde ctorry0@macromedia.com"}, {"Saundra swhal1@state.gov"}, {"Lambert lparham2@techcrunch.com"},
+{"Modestine mdolder3@symantec.com"}, {"Chick camorts4@google.com.au"}, {"Jakob jharken5@spiegel.de"}, {"Robbi rbrister6@redcross.org"},
+{"Colline cbrosh7@alibaba.com"}, {"Michail mrome8@shinystat.com"}, {"Hube hlethbrig9@foxnews.com"}];
 console.log(contactInfo);
 
 
@@ -107,7 +129,13 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const animalNames = [];
+
+.forEach()
+
+const animalNames = [{"Name: Jackal, asiatic, Scientific: Canis aureus."}, {"Name: Screamer, southern, Scientific: Chauna torquata."}, {"Name: White spoonbill, Scientific: Platalea leucordia."},
+{"Name: White-cheeked pintail, Scientific: Anas bahamensis."}, {"Name: Black-backed jackal, Scientific: Canis mesomelas."}, {"Name: Brolga crane, Scietific: Grus rubicundus."},
+{"Name: Common melba finch, Scientific: Pytilia melba."}, {"Name: Pampa gray fox, Scientific: Pseudalopex gymnocercus."}, {"Name: Hawk-eagle, crowned, Scientific: Spizaetus coronatus."},
+{"Name: Australian pelican, Scientific: Pelecanus conspicillatus."}];
 console.log(animalNames);
 
 /* Request 2: .map()    
