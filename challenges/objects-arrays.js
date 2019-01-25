@@ -15,22 +15,22 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-const tyrannosaurus = {
+let tyrannosaurus = {
   diet: 'carnivorous',
   weight: '7000kg',
   length: '12m',
   period: 'Late Cretaceious',
 }
-console.log(tyrannosaurus(weight));
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
 const velociraptor = {
-  diet:  carnivorous,
+  diet:  'carnivorous',
   weight: '15kg',
   length: '1.8m',
   period: 'Late Cretaceious',
 }
-console.log(velociraptor(diet));
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
 const stegosaurus = {
@@ -39,7 +39,7 @@ const stegosaurus = {
   length: '9m',
   period: 'Late Jurassic',
 }
-console.log(stegosaurus(length));
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
 tyrannosaurus = {
@@ -49,14 +49,14 @@ tyrannosaurus = {
   period: 'Late Cretaceious',
 
 }
-console.log(tyrannosaurus(period));
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 tyrannosaurus = {
   roar: "RAWERSRARARWERSARARARRRR!",
 }
-console.log(tyrannosaurus(roar));
+console.log(tyrannosaurus.roar);
 
 
 // ==== Arrays ====
@@ -76,7 +76,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  */
 
-const universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
+let universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
 "Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University",
 "Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"]
 
@@ -130,12 +130,12 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 
-.forEach()
 
-const animalNames = [{"Name: Jackal, asiatic, Scientific: Canis aureus."}, {"Name: Screamer, southern, Scientific: Chauna torquata."}, {"Name: White spoonbill, Scientific: Platalea leucordia."},
-{"Name: White-cheeked pintail, Scientific: Anas bahamensis."}, {"Name: Black-backed jackal, Scientific: Canis mesomelas."}, {"Name: Brolga crane, Scietific: Grus rubicundus."},
-{"Name: Common melba finch, Scientific: Pytilia melba."}, {"Name: Pampa gray fox, Scientific: Pseudalopex gymnocercus."}, {"Name: Hawk-eagle, crowned, Scientific: Spizaetus coronatus."},
-{"Name: Australian pelican, Scientific: Pelecanus conspicillatus."}];
+
+const animalNames = ["Name: Jackal, asiatic, Scientific: Canis aureus.", "Name: Screamer, southern, Scientific: Chauna torquata.", "Name: White spoonbill, Scientific: Platalea leucordia.",
+"Name: White-cheeked pintail, Scientific: Anas bahamensis.", "Name: Black-backed jackal, Scientific: Canis mesomelas.", "Name: Brolga crane, Scietific: Grus rubicundus.",
+"Name: Common melba finch, Scientific: Pytilia melba.", "Name: Pampa gray fox, Scientific: Pseudalopex gymnocercus.", "Name: Hawk-eagle, crowned, Scientific: Spizaetus coronatus.",
+"Name: Australian pelican, Scientific: Pelecanus conspicillatus."];
 console.log(animalNames);
 
 /* Request 2: .map()    

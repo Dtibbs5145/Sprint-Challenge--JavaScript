@@ -3,14 +3,14 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height*/
 
-class CuboidMaker {
+class cuboid {
     constructor(attributes) {
         this.length = attributes.length;
         this.width = attributes.width;
         this.height = attributes.height;
     }
     volume() {
-        console.log(CubeMaker);
+        console.log(cuboid);
     }
 };
 
@@ -19,7 +19,7 @@ class CuboidMaker {
   
   Formula for cuboid volume: length * width * height
 */
-class Volume extends CuboidMaker {
+class Volume extends cuboid {
     constructor(attributes) {
         super(attributes);
         this.volume = attributes.volume;
@@ -35,7 +35,7 @@ class Volume extends CuboidMaker {
 
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
-class surfaceArea extends CuboidMaker {
+class surfaceArea extends cuboid {
     constructor(attributes) {
         super(attributes);
         this.area = attributes.area;
