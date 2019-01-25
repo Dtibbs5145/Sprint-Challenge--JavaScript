@@ -42,7 +42,7 @@ const stegosaurus = {
 console.log(stegosaurus(length));
 
 // What time period did tyrannosaurus live in?
-const tyrannosaurus = {
+tyrannosaurus = {
   diet: 'carnivorous',
   weight: '7000kg',
   length: '12m',
@@ -53,7 +53,7 @@ console.log(tyrannosaurus(period));
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-tyrannosaurus {
+tyrannosaurus = {
   roar: "RAWERSRARARWERSARARARRRR!",
 }
 console.log(tyrannosaurus(roar));
@@ -81,7 +81,7 @@ const universities = ["Missouri Southern State College", "The School of the Art 
 "Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"]
 
 /*Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
+universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
 "Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University",
 "Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"];
 universities.sort();
@@ -89,17 +89,17 @@ console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. */
 
-const contactInfo = [{"Cynde ctorry0@macromedia.com"}, {"Saundra swhal1@state.gov"}, {"Lambert lparham2@techcrunch.com"},
-{"Modestine mdolder3@symantec.com"}, {"Chick camorts4@google.com.au"}, {"Jakob jharken5@spiegel.de"}, {"Robbi rbrister6@redcross.org"},
-{"Colline cbrosh7@alibaba.com"}, {"Michail mrome8@shinystat.com"}, {"Hube hlethbrig9@foxnews.com"}]
+const contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov", "Lambert lparham2@techcrunch.com",
+"Modestine mdolder3@symantec.com", "Chick camorts4@google.com.au", "Jakob jharken5@spiegel.de", "Robbi rbrister6@redcross.org",
+"Colline cbrosh7@alibaba.com", "Michail mrome8@shinystat.com", "Hube hlethbrig9@foxnews.com"]
 
 /*The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [{"Cynde ctorry0@macromedia.com"}, {"Saundra swhal1@state.gov"}, {"Lambert lparham2@techcrunch.com"},
-{"Modestine mdolder3@symantec.com"}, {"Chick camorts4@google.com.au"}, {"Jakob jharken5@spiegel.de"}, {"Robbi rbrister6@redcross.org"},
-{"Colline cbrosh7@alibaba.com"}, {"Michail mrome8@shinystat.com"}, {"Hube hlethbrig9@foxnews.com"}];
+contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov", "Lambert lparham2@techcrunch.com",
+"Modestine mdolder3@symantec.com", "Chick camorts4@google.com.au", "Jakob jharken5@spiegel.de", "Robbi rbrister6@redcross.org",
+"Colline cbrosh7@alibaba.com", "Michail mrome8@shinystat.com", "Hube hlethbrig9@foxnews.com"];
 console.log(contactInfo);
 
 
