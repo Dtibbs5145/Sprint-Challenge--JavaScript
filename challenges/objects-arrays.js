@@ -76,35 +76,35 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  */
 
-let universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
-"Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University",
-"Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"]
-
 /*Once you have the new array created, sort the universities alphabetically and log the result. */
-universities = ["Missouri Southern State College", "The School of the Art Institute of Chicago", "Marian College", "International Medical & Technological University",
-"Sultan Salahuddin Abdul Aziz Shah Polytechnic", "Fachhochschule Rosenheim, Hochschule für Technik und Wirtschaft", "Salem University", "Coastal Carolina University",
-"Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"];
-universities.sort();
-console.log(universities)
+
+const universities = [];
+for (let i = 0; i < graduates.length; i++) {
+  universities.push(graduates[i]["university"]);
+}
+console.log(universities.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. */
 
-const contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov", "Lambert lparham2@techcrunch.com",
-"Modestine mdolder3@symantec.com", "Chick camorts4@google.com.au", "Jakob jharken5@spiegel.de", "Robbi rbrister6@redcross.org",
-"Colline cbrosh7@alibaba.com", "Michail mrome8@shinystat.com", "Hube hlethbrig9@foxnews.com"]
 
 /*The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
 
 Log the result of your new array. */
-contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov", "Lambert lparham2@techcrunch.com",
-"Modestine mdolder3@symantec.com", "Chick camorts4@google.com.au", "Jakob jharken5@spiegel.de", "Robbi rbrister6@redcross.org",
-"Colline cbrosh7@alibaba.com", "Michail mrome8@shinystat.com", "Hube hlethbrig9@foxnews.com"];
+const contactInfo = [];
+for (let i = 0; i < graduates.length; i++) {
+  contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
+}
 console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
+for (let i = 0; i < graduates.length; i++) {
+  if(graduates[i].university.includes("Uni")) {
+    uni.push(graduates[i].university);
+  }
+};
 console.log(uni);
 
 
@@ -126,25 +126,24 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 
 /* Request 1: .forEach()
 
-The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
-
-*/
+The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."*/
 
 
-
-const animalNames = ["Name: Jackal, asiatic, Scientific: Canis aureus.", "Name: Screamer, southern, Scientific: Chauna torquata.", "Name: White spoonbill, Scientific: Platalea leucordia.",
-"Name: White-cheeked pintail, Scientific: Anas bahamensis.", "Name: Black-backed jackal, Scientific: Canis mesomelas.", "Name: Brolga crane, Scietific: Grus rubicundus.",
-"Name: Common melba finch, Scientific: Pytilia melba.", "Name: Pampa gray fox, Scientific: Pseudalopex gymnocercus.", "Name: Hawk-eagle, crowned, Scientific: Spizaetus coronatus.",
-"Name: Australian pelican, Scientific: Pelecanus conspicillatus."];
-console.log(animalNames);
+const animalNames = [];
+zooAnimals.forEach(function(animal) {
+  animalNames.push(`Name: ${animal.animal_name}, Scientific: ${animal.scientific_name}`)
+});
+  console.log(animalNames);
 
 /* Request 2: .map()    
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
 
 */
-
 const lowerCase = [];
+zooAnimals.map(function(lower) {
+  lowerCase.push(lower.animal_name.toLowerCase());
+})
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
@@ -153,6 +152,9 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const largerPopulation = [];
+zooAnimals.filter(function(population) {
+  
+})
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
